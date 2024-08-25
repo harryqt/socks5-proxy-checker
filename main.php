@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 $http = new Swoole\Http\Server('0.0.0.0', 9211);
 $http->set(['worker_num' => swoole_cpu_num()]);
 
